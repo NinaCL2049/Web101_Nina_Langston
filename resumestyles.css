@@ -1,7 +1,150 @@
-body {
-  margin: 0;
-  background-color: red;
+.main-container {
+  /* border: 10px solid red; */
+  height: 11in;
+  width: 8.5in;
 }
+
+.top
+
+h1 {
+  color: white;
+  font-family: "futura";
+  font-size: 200%;
+  text-indent: 100px;
+  padding-top: 30px;
+}
+
+p {
+  color: white;
+  font-family: "futura";
+  font-size: 20px;
+  line-height: 50%;
+  text-indent: 120px;
+
+}
+
+section.top {
+  background-color: #C5759E;
+  height: 20%;
+  /* border-color: green;
+  border-style: solid;
+  border-width: 10px; */
+  margin: 10px;
+
+}
+
+section.bottom {
+  height: 80%;
+  /* border-color: green;
+  border-style: solid;
+  border-width: 10px; */
+  /* columns: 25% 75%; */
+/* the columns: line really doesn't make the columns, that's the grid-template-columns below */
+}
+
 .grid-container {
   display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px; 
+  height: 100%;
+  
+  /* This adds space between columns */
 }
+
+.grid-item {
+  /* border-style: solid; */
+  height: 91%;
+  /* border-color: blue; */
+}
+
+.grid-item:nth-child(1) {
+  font-family: 'Arial', sans-serif;
+
+  font-weight: normal;
+  color: white;
+  line-height: normal;
+  background-color: black;
+  padding: 20px;
+
+}
+
+.grid-item:nth-child(1) h2 {
+  line-height: 55px;
+  font-size: 25px;
+  color: gray;
+  text-indent: 10px;
+}
+
+.grid-item:nth-child(1) li {
+  line-height: 55px;
+  font-size: 17px;
+}
+
+.grid-item:nth-child(1) p {
+  color: white;
+  text-indent: 1px;
+  line-height: 20px;
+ /* padding: 20px; */
+}
+
+.grid-item:nth-child(2) {
+  padding: 20px;
+
+}
+
+.grid-item:nth-child(2) h2 span {
+  background: #C5759E;
+}
+
+.grid-item:nth-child(2) h2 {
+  font-family: 'helvetica';
+  font-size: 20px;
+  color: white;
+}
+
+
+
+.grid-item:nth-child(2) p {
+  font-family: 'futura';
+  font-size: 14px;
+  text-indent: 0px;
+  /* font-weight: bold; */
+  color: black;
+  line-height: normal;
+  /* text-indent: 15px; */
+}
+
+.grid-item:nth-child(2) ul {
+  font-family: 'futura';
+  font-size: 14px;
+  text-indent: 5px;
+  /* font-weight: bold; */
+  color: black;
+  line-height: normal;
+  /* text-indent: 15px; */
+}
+
+.grid-item:nth-child(2) h3 {
+  font-family: 'futura';
+  font-size: 18px;
+  line-height: 50%;
+}
+
+.grid-item:nth-child(2) h4 {
+  font-family: 'futura';
+  font-size: 14px;
+  line-height: 50%;
+}
+
+
+@media screen and (max-width: 480px) {
+  .grid-container {grid-template-columns: 1fr;}
+  
+
+  /* .grid-item:nth-child(1) {width: 1fr; float: left;}
+  .grid-item:nth-child(2) {width: 2fr} */
+}
+
+
+
+
